@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de usuario</title>
+</head>
+<body>
+	<h2>Registro de usuario</h2>
+	<form method="post" action="registro.php">
+		<label>Nombre:</label>
+		<input type="text" name="nombre" required><br><br>
+		<label>Correo electrónico:</label>
+		<input type="email" name="email" required><br><br>
+		<label>Contraseña:</label>
+		<input type="password" name="password" required><br><br>
+		<label>Tipo de usuario:</label>
+		<select name="tipo" required>
+			<option value="">Seleccionar tipo</option>
+			<option value="Alumno">Alumno</option>
+			<option value="Profesor">Profesor</option>
+			<option value="Administrador">Administrador</option>
+		</select><br><br>
+		<input type="submit" value="Registrarse">
+	</form>
+</body>
+</html>
